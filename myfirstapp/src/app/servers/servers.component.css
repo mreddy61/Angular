@@ -1,0 +1,27 @@
+/*h1{
+text-align: center;
+color:green;
+}*/
+.center{
+text-align: center;
+}   
+.btn-primary{
+   align-content: center;
+   background-color:midnightblue;
+   
+}
+.label{
+    text-align: center;
+}
+.form-control{
+    background-color:seashell;
+    text-align: center;
+    box-shadow: 1px 5px grey;
+    text-shadow: 1px 0px;
+    font-weight: bold;
+    color: green;
+}
+.control-label{
+text-align: center;
+width: 100%
+}

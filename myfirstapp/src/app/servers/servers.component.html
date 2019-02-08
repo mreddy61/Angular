@@ -1,0 +1,17 @@
+
+<label class="control-label">Name</label>
+
+<input type="text" class="form-control"
+(input)="onUserNameUpdate($event)"[(ngModel)]="username">
+<hr>
+
+
+<hr>
+<div class="center">
+<button class="btn-primary" 
+[disabled]="!enterbutton"
+(click)="onEnterSite()">Enter Site</button>
+<h1 [ngStyle]="{color: getColor()}">{{welcome}} {{username}} {{ status }}</h1>
+</div>
+
+

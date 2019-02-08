@@ -1,0 +1,18 @@
+
+<form #frm = "ngForm">
+  <input type="text" name="playerName" value="" ngModel>
+  <button type="submit" name="button" class="btn btn-primary" (click)="addNewPlayer(frm)">Add Player</button>
+</form>
+
+
+<br>
+
+<button class="btn btn-success" (click)="getPlayersList()">Players List</button>
+<ul class="list-group">
+  <li  *ngFor="let player of playerslist" class="list-group-item" >
+          {{player}}
+          {{playerslist.indexOf(player)}}
+          <button class="btn btn-primary" (click)="deletePlayer(playerslist.indexOf(player))">Delete Player</button>
+  </li>
+</ul>
+
